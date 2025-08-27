@@ -4,6 +4,7 @@ import { Manrope } from 'next/font/google'
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from '@/lib/utils'
+import { ClerkProvider } from '@clerk/nextjs';
 
 const fontHeading = Manrope({
   subsets: ['latin'],
@@ -29,8 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body 
+        <body
           className={cn(
             'antialiased',
             fontHeading.variable,
@@ -38,15 +40,16 @@ export default function RootLayout({
           )}
         >
           <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                enableSystem
-                disableTransitionOnChange
-              >
-                <Navbar/>
-                {children}
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            {children}
           </ThemeProvider>
         </body>
       </html>
+    </ClerkProvider>
   );
 }

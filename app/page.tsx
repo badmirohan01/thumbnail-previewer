@@ -17,7 +17,7 @@ export default function Home() {
           </Button>
           <Button variant="outline">
             <Link href="/pricing">View Pricing</Link>
-          </Button>
+          </Button> 
         </div>
         <img src="" alt="" className="w-full h-auto mx-8" />
       </main>

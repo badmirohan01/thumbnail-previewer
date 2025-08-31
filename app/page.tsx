@@ -19,7 +19,6 @@ export default function Home() {
             <Link href="/pricing">View Pricing</Link>
           </Button> 
         </div>
-        <img src="" alt="" className="w-full h-auto mx-8" />
       </main>
     </div>
   );

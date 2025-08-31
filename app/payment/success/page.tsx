@@ -9,7 +9,7 @@ export default function Cancelled(){
             <div className="w-[300px] h-[2px] bg-green-300"></div>
             <p className="text-xl">Your payment has been recieved. Thankyou for your purchase.</p>
             <Button>
-                <Link href='/pricing'>Go to Dashboard</Link>
+                <Link href='/dashboard'>Go to Dashboard</Link>
             </Button>
         </div>
     )

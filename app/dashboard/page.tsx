@@ -34,7 +34,7 @@ export default async function Dashboard() {
     return (
         <>
             <div className="flex flex-col items-center justify-center p-8 rounded-lg shadow-md">
-                <p className="text-xl mb-6">You are Subscribed and good to go</p>
+                <p className="text-xl mb-6">Subscribed to the app</p>
                 <ThumbnailPreviewer channelNameSaved={channelName} />
             </div>
         </>

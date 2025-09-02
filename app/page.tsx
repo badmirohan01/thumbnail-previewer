@@ -1,24 +1,15 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Hero } from "@/components/landing-page/Hero";
 
 export default function Home() {
   return (
     <div className="bg-background text-foreground">
       <main className="container mx-auto px-4 pt-12 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          MicroSaaS Application
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Description of your Micro SaaS
-        </p>
-        <div className="flex justify-center space-x-4">
-          <Button>
-            <Link href="/dashboard">Get Started</Link>
-          </Button>
-          <Button variant="outline">
-            <Link href="/pricing">View Pricing</Link>
-          </Button> 
-        </div>
+        <div className="absolute -top-0 left-0 right-0 h-[calc(100vh-80px)]
+      dark:bg-[linear-gradient(to_right,#4a5568_1px, transparent_1px),linear-gradient(to_bottom,#4a5568_1px,transparent_1px)]
+      bg-[linear-gradient(to_right,#333333_1px,transparent_1px),linear-gradient(to_bottom,#333333_1px,transparent_1px)]
+      bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-[0.2]"/>
+
+        <Hero />
       </main>
     </div>
   );

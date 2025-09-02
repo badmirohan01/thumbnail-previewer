@@ -166,12 +166,8 @@ export default function ThumbnailPreviewer({ channelNameSaved }: { channelNameSa
                                         {video.views} views • {video.age}
                                     </p>
                                 </div>
-
-
                             </div>
-
                         </div>
-
                     </div>
                 ))}
 

@@ -283,3 +283,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#863554] via-[#b104b1] to-[#0a4ba0] text-transparent bg-clip-text
+}
+.gradient-button {
+  @apply bg-gradient-to-r from-[#863554] via-[#b104b1] to-[#0a4ba0]
+}

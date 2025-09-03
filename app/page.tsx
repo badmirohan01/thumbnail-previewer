@@ -1,4 +1,5 @@
 import { Hero } from "@/components/landing-page/Hero";
+import Steps from "@/components/landing-page/Steps";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-[0.2]"/>
 
         <Hero />
+        <Steps />
       </main>
     </div>
   );

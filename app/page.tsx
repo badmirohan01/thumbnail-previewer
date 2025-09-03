@@ -1,3 +1,4 @@
+import Demo from "@/components/landing-page/Demo";
 import { Hero } from "@/components/landing-page/Hero";
 import Steps from "@/components/landing-page/Steps";
 
@@ -12,6 +13,7 @@ export default function Home() {
 
         <Hero />
         <Steps />
+        <Demo />
       </main>
     </div>
   );

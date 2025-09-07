@@ -104,7 +104,7 @@ export default async function Pricing() {
                 <Link href={backlink} className="text-sm font-medium text-primary underline-offset-4 hover:underline">&larr; Back</Link>
                 <h2 className="border-b pb-2 text-3xl font-semibold tracking-tight">Full Access</h2>
                 <p className="leading-7">Access to all features</p>
-                <p className="text-2xl font-bold">7299/month</p>
+                <p className="text-2xl font-bold">₹7,299/month</p>
                 {isSubscribed ? (
                     <form action={createCustomerPortal}>
                         <Button className="cursor-pointer" type="submit">Manage Subscription</Button>

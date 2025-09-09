@@ -1,6 +1,6 @@
 import Demo from "@/components/landing-page/Demo";
 import Faq from "@/components/landing-page/Faq";
-import { Hero } from "@/components/landing-page/Hero";
+import Hero from "@/components/landing-page/Hero";
 import Steps from "@/components/landing-page/Steps";
 import PricingLanding from "@/components/landing-page/Pricing";
 import CallToAction from "@/components/landing-page/CallToAction";

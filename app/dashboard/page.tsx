@@ -5,6 +5,14 @@ import { redirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import ThumbnailPreviewer from "./_components/thumbnail-previewer";
 
+async function getChannelName(userId: string) {
+    const user = await prisma.user.findUnique({
+        where: { id: userId },
+        select: { channelName: true }
+    })
+    return user?.channelName || '';
+}
+
 export default async function Dashboard() {
     const { userId } = await auth();
     if (!userId) {
@@ -29,7 +37,7 @@ export default async function Dashboard() {
             </div>
         )
     }
-    const channelName = "life_guru"
+    const channelName = await getChannelName(userId)
 
     return (
         <>

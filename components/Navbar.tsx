@@ -88,11 +88,8 @@ export const Navbar = () => {
                                 </div>
                             </div>
                         </AnimationContainer>
-
                     </div>
-
                 </div>
-
             </div>
         </nav>
     )
